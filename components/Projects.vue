@@ -19,17 +19,17 @@
         size="2xs"
       />
     </div>
-    <ul class="space-y-4">
+    <div class="space-y-4">
       <NuxtLink
         v-for="(project, id) in projects"
         :key="id"
-        class="flex items-end gap-4 hover:bg-gray-200 p-2 -m-2 rounded-lg"
+        class="flex items-end gap-4 group p-2 -m-2 rounded-lg"
         :to="project.url"
         target="_blank"
         external
       >
         <div>
-          <h3 class="text-sm font-medium">{{ project.name }}</h3>
+          <h3 class="text-sm font-medium group-hover:text-primary-600">{{ project.name }}</h3>
           <p class="text-gray-400 text-sm">{{ project.description }}</p>
         </div>
         <div
@@ -43,7 +43,7 @@
           class="ring-1 ring-gray-200 dark:ring-white/10"
         />
       </NuxtLink>
-    </ul>
+    </div>
   </div>
 </template>
 

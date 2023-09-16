@@ -18,8 +18,7 @@ export default defineNuxtConfig({
         class: "h-full",
       },
       bodyAttrs: {
-        class:
-          "antialiased bg-gray-50 dark:bg-black min-h-screen bg-[length:1rem_1rem] bg-[radial-gradient(circle,#eceeef_1px,transparent_0)] dark:bg-[radial-gradient(circle,#191919_1px,transparent_0)]",
+        class: "antialiased bg-gray-50 dark:bg-black min-h-screen",
       },
     },
   },
@@ -27,6 +26,7 @@ export default defineNuxtConfig({
     display: "swap",
     families: {
       Inter: [400, 500, 600, 700, 800, 900],
+      "IBM Plex Mono": [400, 500, 600, 700, 800, 900],
     },
   },
 });
