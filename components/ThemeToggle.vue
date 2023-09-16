@@ -18,9 +18,11 @@ const isDark = computed({
       @click="isDark = !isDark"
     >
       <Icon
+        aria-hidden="true"
         :name="isDark ? 'solar:sun-2-outline' : 'solar:moon-outline'"
         class="w-5 h-5"
       />
+      <span class="sr-only">Toggle theme</span>
     </button>
   </UTooltip>
 </template>

@@ -5,14 +5,16 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxtjs/google-fonts",
     "@nuxtjs/fontaine",
+    "@nuxt/image",
   ],
   ui: {
     icons: ["heroicons", "lucide"],
   },
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
+    pageTransition: { name: "page", mode: "out-in" },
     head: {
       htmlAttrs: {
+        lang: "en",
         class: "h-full",
       },
       bodyAttrs: {

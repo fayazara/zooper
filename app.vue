@@ -4,8 +4,8 @@
   <UContainer>
     <NuxtPage />
   </UContainer>
-    <div class="h-24"></div>
-    <Footer />
+  <div class="h-24"></div>
+  <Footer />
 </template>
 
 <style>

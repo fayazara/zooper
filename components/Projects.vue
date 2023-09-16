@@ -1,10 +1,14 @@
 <template>
   <div>
     <div class="mb-6 flex items-center gap-3">
-      <div class="flex-none rounded-full p-1 text-primary-500 bg-primary-500/10">
+      <div
+        class="flex-none rounded-full p-1 text-primary-500 bg-primary-500/10"
+      >
         <div class="h-1.5 w-1.5 rounded-full bg-current"></div>
       </div>
-      <h2 class="uppercase text-xs font-semibold text-gray-400">CURRENT PROEJCTS</h2>
+      <h2 class="uppercase text-xs font-semibold text-gray-400">
+        CURRENT PROEJCTS
+      </h2>
       <UButton
         icon="i-heroicons-arrow-small-right-20-solid"
         :trailing="true"
@@ -35,6 +39,7 @@
           :src="project.thumbnail"
           :ui="{ rounded: 'rounded' }"
           size="md"
+          :alt="project.name"
           class="ring-1 ring-gray-200 dark:ring-white/10"
         />
       </NuxtLink>
