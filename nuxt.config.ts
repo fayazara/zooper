@@ -26,7 +26,6 @@ export default defineNuxtConfig({
     display: "swap",
     families: {
       Inter: [400, 500, 600, 700, 800, 900],
-      "IBM Plex Mono": [400, 500, 600, 700, 800, 900],
     },
   },
 });

@@ -18,7 +18,6 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        "IBM Plex Mono",
         "Inter",
         "Avenir Next",
         "Roboto",
@@ -45,7 +44,6 @@ module.exports = {
         "Courier New",
         "monospace",
       ],
-      display: ["Cal Sans", "Inter", "sans-serif"],
     },
   },
   plugins: [require("@tailwindcss/typography")],
