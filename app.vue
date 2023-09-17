@@ -1,11 +1,11 @@
 <template>
-  <Navbar />
-  <div class="h-24"></div>
+  <AppNavbar />
+  <div class="h-32"></div>
   <UContainer>
     <NuxtPage />
   </UContainer>
-  <div class="h-24"></div>
-  <Footer />
+  <div class="h-32"></div>
+  <AppFooter />
 </template>
 
 <style>

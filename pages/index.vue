@@ -1,15 +1,15 @@
 <template>
   <main class="min-h-screen">
     <div class="space-y-16">
-      <Intro />
-      <Divider />
-      <SocialLinks />
-      <Divider />
-      <Projects />
-      <Divider />
-      <Articles />
-      <Divider />
-      <Newsletter />
+      <HomeIntro />
+      <HomeDivider />
+      <HomeSocialLinks />
+      <HomeDivider />
+      <HomeFeaturedProjects />
+      <HomeDivider />
+      <HomeFeaturedArticles />
+      <HomeDivider />
+      <HomeNewsletter />
     </div>
   </main>
 </template>

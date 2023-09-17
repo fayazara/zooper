@@ -1,11 +1,6 @@
 <template>
   <div>
-    <div class="mb-4 flex items-center gap-3">
-      <div class="flex-none rounded-full p-1 text-teal-500 bg-teal-500/10">
-        <div class="h-1.5 w-1.5 rounded-full bg-current"></div>
-      </div>
-      <h2 class="uppercase text-xs font-semibold text-gray-400">FIND ME ON</h2>
-    </div>
+    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">FIND ME ON</h2>
     <div class="space-y-5">
       <NuxtLink
         v-for="link in links"

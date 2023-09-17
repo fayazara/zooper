@@ -29,7 +29,7 @@
         </li>
         <li class="flex-1"></li>
         <li>
-          <ThemeToggle />
+          <AppThemeToggle />
         </li>
       </ul>
     </nav>

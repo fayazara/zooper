@@ -22,14 +22,10 @@
       thoughts (mostly about tech and design).
     </p>
     <p class="text-gray-900 dark:text-gray-400">
-      By day, I'm a Frontend Engineer at
-      <a
-        href="https://borg.id"
-        target="_blank"
-        class="underline text-primary-600"
-        >borg</a
-      >, and by night (and weekends), I'm busy tinkering with some random tool
-      or app that I am building.
+      By day, I'm a product engineer at
+      <a href="https://borg.id" target="_blank" class="underline">Borg</a>, and
+      by night (and weekends), I'm busy tinkering with some random tool or app
+      that I am building.
     </p>
   </div>
 </template>
