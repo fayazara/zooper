@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/fontaine",
     "@nuxt/image",
     "@nuxt/content",
+    "@nuxthq/studio",
   ],
   ui: {
     icons: ["heroicons", "lucide"],
