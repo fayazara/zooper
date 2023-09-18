@@ -1,4 +1,5 @@
 <template>
+  <NuxtLoadingIndicator color="#334155" />
   <AppNavbar />
   <div class="h-32"></div>
   <UContainer>
