@@ -1,14 +1,14 @@
 <template>
   <main class="min-h-screen">
-    <p>Bookmarks</p>
+    <AppHeader class="mb-12" title="Bookmarks" :description="description" />
   </main>
 </template>
 
-
 <script setup>
+const description =
+  "Awesome links I find on the internet. One neat thing about this page is, I just need to send a telegram message to a bot and it adds it here in the list.";
 useSeoMeta({
-  title: "Bookmarks | Fayaz Ahmed",
-  description:
-    "I'm Fayaz, your friendly neighborhood software, product engineer and designer from Bengaluru, India. I specialize in building web applications and sites using Javascript, React, Vue & Node.",
+  title: "Lab | Fayaz Ahmed",
+  description,
 });
 </script>

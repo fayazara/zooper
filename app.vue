@@ -1,5 +1,5 @@
 <template>
-  <NuxtLoadingIndicator />
+  <NuxtLoadingIndicator color="#14b8a6" />
   <AppNavbar />
   <div class="h-32"></div>
   <UContainer>
@@ -14,13 +14,14 @@
 .page-leave-active {
   transition: all 0.2s;
 }
-.page-enter-from {
-  opacity: 0;
-  transform: translateY(5px);
-}
 
 .page-leave-to {
   opacity: 0;
   transform: translateY(-5px);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(5px);
 }
 </style>

@@ -56,7 +56,7 @@ const items = [
   { name: "Lab", path: "/lab", icon: "solar:programming-outline" },
   {
     name: "What's in my bag?",
-    path: "/uses",
+    path: "/whats-in-my-bag",
     icon: "solar:backpack-outline",
   },
   {

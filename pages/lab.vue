@@ -1,13 +1,13 @@
 <template>
   <main class="min-h-screen">
-    <p>Lab</p>
+    <AppHeader class="mb-12" title="Lab" :description="description" />
   </main>
 </template>
 
 <script setup>
+const description = "Some random experiments I do with UI, Design and Code. This page is still in progress";
 useSeoMeta({
   title: "Lab | Fayaz Ahmed",
-  description:
-    "I'm Fayaz, your friendly neighborhood software, product engineer and designer from Bengaluru, India. I specialize in building web applications and sites using Javascript, React, Vue & Node.",
+  description,
 });
 </script>

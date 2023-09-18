@@ -1,16 +1,6 @@
 <template>
   <main class="min-h-screen">
-    <div class="mb-16">
-      <h1
-        class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100"
-      >
-        Articles
-      </h1>
-      <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
-        All of my long-form thoughts on programming, user interfaces, product
-        design, and more, collected in chronological order.
-      </p>
-    </div>
+    <AppHeader class="mb-16" title="Articles" :description="description" />
     <ul class="space-y-16">
       <li v-for="(article, id) in articles" :key="id">
         <AppArticleCard :article="article" />
@@ -20,10 +10,11 @@
 </template>
 
 <script setup>
+const description =
+  "All of my long-form thoughts on programming, user interfaces, product design, and more, collected in chronological order.";
 useSeoMeta({
   title: "Articles | Fayaz Ahmed",
-  description:
-    "All of my long-form thoughts on programming, user interfaces, product design, and more, collected in chronological order.",
+  description,
 });
 
 const { data: articles } = await useAsyncData("all-articles", () =>
