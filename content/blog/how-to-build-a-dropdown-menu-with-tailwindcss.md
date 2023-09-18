@@ -52,11 +52,15 @@ Start by creating the basic HTML structure for your dropdown:
 </div>
 ```
 
+```ts
+export default () => "Hello Content Wind";
+```
+
 In this structure, we have a button that acts as the trigger for the dropdown menu. Inside the button, you can customize the text and add an icon.
 
 ### 2. Dropdown Content
 
-Inside the <div class="absolute right-0 ...">, you can add the items you want in your dropdown menu. Here's an example with a few items:
+Inside the `<div class="absolute right-0 ...">`, you can add the items you want in your dropdown menu. Here's an example with a few items:
 
 ```html
 <div

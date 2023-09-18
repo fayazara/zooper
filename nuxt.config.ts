@@ -24,6 +24,11 @@ export default defineNuxtConfig({
       },
     },
   },
+  content: {
+    highlight: {
+      theme: "github-dark",
+    },
+  },
   googleFonts: {
     display: "swap",
     families: {

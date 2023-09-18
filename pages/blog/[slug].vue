@@ -1,13 +1,13 @@
 <template>
   <main class="min-h-screen">
-    <p>Article</p>
+    <div class="prose dark:prose-invert">
+      <ContentDoc />
+    </div>
   </main>
 </template>
 
-<script setup>
-useSeoMeta({
-  title: "Blog | Fayaz Ahmed",
-  description:
-    "I'm Fayaz, your friendly neighborhood software, product engineer and designer from Bengaluru, India. I specialize in building web applications and sites using Javascript, React, Vue & Node.",
-});
-</script>
+<style>
+.prose h2 a {
+  @apply no-underline;
+}
+</style>
