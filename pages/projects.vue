@@ -17,7 +17,7 @@ useSeoMeta({
     "I'm Fayaz, your friendly neighborhood software, product engineer and designer from Bengaluru, India. I specialize in building web applications and sites using Javascript, React, Vue & Node.",
 });
 
-const { data: projects } = await useAsyncData("projects-home", () =>
+const { data: projects } = await useAsyncData("projects-all", () =>
   queryContent("/projects").find()
 );
 </script>
