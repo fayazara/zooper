@@ -35,6 +35,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       mono: [
+        "Cascadia Code",
         "ui-monospace",
         "SFMono-Regular",
         "Menlo",
