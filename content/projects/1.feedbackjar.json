@@ -3,5 +3,6 @@
   "url": "https://feedbackjar.app",
   "description": "Open source feedback, roadmaps and changelogs",
   "thumbnail": "/projects/feedbackjar.png",
-  "status": "WIP"
+  "status": "WIP",
+  "opensource": true
 }

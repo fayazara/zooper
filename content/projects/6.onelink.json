@@ -1,0 +1,8 @@
+{
+  "name": "Onelink",
+  "url": "https://onelink-nu.vercel.app/",
+  "description": "An experimental link-in-bio tool, where the data lives in the URL.",
+  "thumbnail": "/projects/onelink.png",
+  "status": "Active",
+  "opensource": true
+}

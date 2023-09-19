@@ -3,5 +3,6 @@
   "url": "https://fluenticons.co",
   "description": "Microsoft fluenticons viewer",
   "thumbnail": "/projects/fluenticons.png",
-  "status": "Acquired"
+  "status": "Acquired",
+  "opensource": true
 }

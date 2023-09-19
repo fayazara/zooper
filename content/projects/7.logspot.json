@@ -1,0 +1,8 @@
+{
+  "name": "Logspot",
+  "url": "https://logspot.vercel.app/",
+  "description": "A beautiful open source change log template, with widgets included",
+  "thumbnail": "/projects/logspot.png",
+  "status": "Active",
+  "opensource": true
+}

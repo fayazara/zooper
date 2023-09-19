@@ -1,23 +1,43 @@
 <template>
   <main class="min-h-screen">
-    <div class="mb-16">
-      <h1
-        class="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100"
-      >
-        What's in my bag?
-      </h1>
-      <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
-        Software I use, gadgets I love, and other things I recommend. Here’s a
-        big list of all of my favorite stuff.
-      </p>
+    <AppHeader
+      class="mb-12"
+      title="What's in my bag?"
+      :description="description"
+    />
+    <div class="space-y-24">
+      <ul class="space-y-8">
+        <AppUsesHeader title="Hardware" />
+        <AppUsesItem v-for="(item, id) in hardware" :key="id" :item="item" />
+      </ul>
+      <ul class="space-y-8">
+        <AppUsesHeader title="Software" />
+        <AppUsesItem v-for="(item, id) in software" :key="id" :item="item" />
+      </ul>
+      <ul class="space-y-8">
+        <AppUsesHeader title="Desk" />
+        <AppUsesItem v-for="(item, id) in desk" :key="id" :item="item" />
+      </ul>
+      <ul class="space-y-8">
+        <AppUsesHeader title="Other" />
+        <AppUsesItem v-for="(item, id) in other" :key="id" :item="item" />
+      </ul>
     </div>
   </main>
 </template>
 
 <script setup>
+const description =
+  "Software I use, gadgets I love, and other things I recommend. Here’s a big list of all of my favorite stuff.";
 useSeoMeta({
   title: "Things I use | Fayaz Ahmed",
-  description:
-    "I'm Fayaz, your friendly neighborhood software, product engineer and designer from Bengaluru, India. I specialize in building web applications and sites using Javascript, React, Vue & Node.",
+  description,
 });
+const { data: items } = await useAsyncData("uses", () =>
+  queryContent("/uses").find()
+);
+const hardware = items.value.filter((item) => item.category === "hardware");
+const software = items.value.filter((item) => item.category === "software");
+const desk = items.value.filter((item) => item.category === "desk");
+const other = items.value.filter((item) => item.category === "others");
 </script>

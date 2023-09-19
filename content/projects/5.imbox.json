@@ -3,5 +3,6 @@
   "url": "https://dub.sh/imbox",
   "description": "Temporary inbox as a chrome extension",
   "thumbnail": "/projects/imbox.png",
-  "status": "Active"
+  "status": "Active",
+  "opensource": true
 }

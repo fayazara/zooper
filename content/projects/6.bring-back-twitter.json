@@ -3,5 +3,6 @@
   "url": "https://github.com/fayazara/bring-back-twitter-bird",
   "description": "Chrome extension to replace the new Twitter logo with the original bird",
   "thumbnail": "/projects/twitter.svg",
-  "status": "Active"
+  "status": "Active",
+  "opensource": true
 }

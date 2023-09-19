@@ -3,5 +3,6 @@
   "url": "https://formdata.cc",
   "description": "Relay form data to your email for free",
   "thumbnail": "/projects/formdata.png",
-  "status": "Active"
+  "status": "Active",
+  "opensource": true
 }
