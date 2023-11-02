@@ -9,7 +9,7 @@ Recently, I joined HeadshotPro as a full-stack developer, completed my onboardin
 
 Now, I faced two options: either create a new user on my Macbook for my work or use my existing user and add a new GitHub account to it. However, it wasn't that straightforward.
 
-My friend [Akshara Hegde](https://twitter.com/akshara_dev) advised me to create a new SSH key and link it to my work GitHub account. She also suggested creating terminal aliases to switch between my personal and work GitHub accounts. While this method worked, it meant running a script each time I needed to switch, which was far from ideal. Here's what it looked like:
+My friend [Akshara Hegde](https://twitter.com/akshara_dev) advised me to create a new SSH key and link it to my work GitHub account. He also suggested creating terminal aliases to switch between my personal and work GitHub accounts. While this method worked, it meant running a script each time I needed to switch, which was far from ideal. Here's what it looked like:
 
 ```bash
 alias git_personal="(ssh-agent) && ssh-add ~/.ssh/personal"
