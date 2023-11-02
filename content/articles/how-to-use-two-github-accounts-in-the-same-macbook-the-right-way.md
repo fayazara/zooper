@@ -5,7 +5,7 @@ date: "Nov 2, 2023"
 slug: "how-to-use-two-github-accounts-on-a-macbook-the-right-way"
 ---
 
-Recently, I joined Headshotpro as a full-stack developer, completed my onboarding, and received an invitation to their GitHub organization. The catch? It was sent to my new email address, which was perfectly fine, except that I had already linked my personal GitHub account to my Macbook, which I use a lot, since I make a lot of side projects and some open-source contributions.
+Recently, I joined HeadshotPro as a full-stack developer, completed my onboarding, and received an invitation to their GitHub organization. The catch? It was sent to my new email address, which was perfectly fine, except that I had already linked my personal GitHub account to my Macbook, which I use a lot, since I make a lot of side projects and some open-source contributions.
 
 Now, I faced two options: either create a new user on my Macbook for my work or use my existing user and add a new GitHub account to it. However, it wasn't that straightforward.
 
