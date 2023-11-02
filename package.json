@@ -9,18 +9,18 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.8.5",
-    "@nuxt/devtools": "0.8.3",
-    "@nuxthq/studio": "^1.0.0",
+    "@nuxt/content": "^2.9.0",
+    "@nuxt/devtools": "^1.0.0",
+    "@nuxthq/studio": "^1.0.3",
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "nuxt": "3.7.4",
-    "nuxt-icon": "^0.5.0",
+    "nuxt": "^3.8.0",
+    "nuxt-icon": "^0.6.1",
     "yarn-upgrade-all": "^0.7.2"
   },
   "dependencies": {
-    "@iconify-json/lucide": "1.1.127",
-    "@nuxt/image": "^1.0.0-rc.2",
-    "@nuxt/ui": "^2.8.1"
+    "@iconify-json/lucide": "^1.1.139",
+    "@nuxt/image": "^1.0.0",
+    "@nuxt/ui": "^2.10.0"
   }
 }
