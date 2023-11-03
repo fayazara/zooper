@@ -1,6 +1,6 @@
 <template>
   <main class="min-h-screen">
-    <div class="prose dark:prose-invert prose-blockquote:not-italic">
+    <div class="prose dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900">
       <ContentDoc v-slot="{ doc }" tag="article">
         <article>
           <h1>{{ doc.title }}</h1>
