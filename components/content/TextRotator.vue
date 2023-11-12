@@ -1,9 +1,15 @@
 <template>
-  <div class="p-4 bg-gray-100 rounded-md border flex flex-col justify-center items-center overflow-hidden">
-    <div class="font-extrabold text-lg [text-wrap:balance] text-gray-700">
+  <div
+    class="p-4 bg-gray-100 dark:bg-gray-900 flex flex-col justify-center items-center overflow-hidden"
+  >
+    <div class="font-extrabold text-lg [text-wrap:balance] text-gray-700 dark:text-gray-200">
       We design and develop the best
-      <span class=" inline-flex flex-col h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] overflow-hidden">
-        <ul class="block text-left leading-tight [&_li]:block animate-text-slide">
+      <span
+        class="inline-flex flex-col h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] overflow-hidden"
+      >
+        <ul
+          class="block text-left leading-tight [&_li]:block animate-text-slide"
+        >
           <li class="text-indigo-500">Mobile apps</li>
           <li class="text-rose-500">Websites</li>
           <li class="text-yellow-500">Admin dashboards</li>
@@ -16,17 +22,12 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-
-</script>
-
 <style>
 .animate-text-slide {
   animation: text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite;
 }
 
 @keyframes text-slide {
-
   0%,
   16% {
     transform: translateY(0%);
