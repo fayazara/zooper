@@ -10,28 +10,43 @@
       <div class="p-2 flex items-center gap-2 border-b dark:border-white/10">
         <div class="flex items-center w-full">
           <UButton
-            @click="showCode = false"
+            @click="tab = 'preview'"
             label="Preview"
             variant="soft"
             color="white"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
-            :class="{ 'active-tab': !showCode }"
+            :class="{ 'active-tab': tab === 'preview' }"
           />
           <UButton
-            @click="showCode = true"
+            @click="tab = 'code'"
             label="Code"
             variant="soft"
             color="white"
             size="xs"
             class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
-            :class="{ 'active-tab': showCode }"
+            :class="{ 'active-tab': tab === 'code' }"
+          />
+          <UButton
+            @click="tab = 'usage'"
+            label="Usage"
+            variant="soft"
+            color="white"
+            size="xs"
+            class="relative hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+            :class="{ 'active-tab': tab === 'usage' }"
           />
         </div>
       </div>
       <div>
-        <slot v-if="showCode" name="codebase" />
-        <slot v-else name="preview" />
+        <div
+          v-if="tab === 'preview'"
+          class="px-4 py-8 bg-gray-100 dark:bg-gray-900 flex flex-col justify-center items-center overflow-hidden"
+        >
+          <slot name="preview" />
+        </div>
+        <slot v-if="tab === 'code'" name="codebase" />
+        <slot v-if="tab === 'usage'" name="usage" />
       </div>
     </div>
   </div>
@@ -43,7 +58,7 @@ defineProps({
   description: String,
 });
 
-const showCode = ref(false);
+const tab = ref("preview");
 </script>
 
 <style scoped>

@@ -16,6 +16,8 @@
     "@nuxtjs/google-fonts": "^3.0.2",
     "nuxt": "^3.8.0",
     "nuxt-icon": "^0.6.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.7",
     "yarn-upgrade-all": "^0.7.2"
   },
   "dependencies": {

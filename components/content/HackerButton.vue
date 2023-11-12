@@ -1,48 +1,46 @@
 <template>
-  <div
-    class="p-4 bg-gray-100 dark:bg-gray-900 overflow-hidden"
+  <button
+    type="button"
+    class="rounded-md bg-white dark:bg-gray-800 px-3 py-2 text-sm font-semibold text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-600 hover:bg-gray-50 dark:hover:bg-gray-950 relative font-mono"
+    @click="startScrambling"
   >
-    <button
-      type="button"
-      class="rounded-md bg-white dark:bg-gray-800 px-3 py-2 text-sm font-semibold text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-600 hover:bg-gray-50 dark:hover:bg-gray-950 relative"
-      @click="startScrambling"
-    >
-      {{ buttonText }}
-    </button>
-  </div>
+    {{ displayText }}
+  </button>
 </template>
 
 <script setup>
-const buttonText = ref("Submit Form");
-const originalText = "Submit Form";
+const props = defineProps({
+  label: String,
+});
+
+const displayText = ref(props.label);
 const charset = "abcdefghijklmnopqrstuvwxyz";
 
 function randomChars(length) {
-  let result = "";
-  for (let i = 0; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * charset.length);
-    result += charset[randomIndex];
-  }
-  return result;
+  return Array.from(
+    { length },
+    () => charset[Math.floor(Math.random() * charset.length)]
+  ).join("");
 }
 
 async function scramble(input) {
   let prefix = "";
-  let suffix = randomChars(input.length);
-  let iterations = input.length;
-
-  for (let index = 0; index < iterations; index++) {
+  for (let index = 0; index < input.length; index++) {
     await new Promise((resolve) => setTimeout(resolve, 50));
     prefix += input.charAt(index);
-    suffix = randomChars(input.length - prefix.length);
-    buttonText.value = prefix + suffix;
+    displayText.value = prefix + randomChars(input.length - prefix.length);
   }
-
-  buttonText.value = input;
 }
 
 const startScrambling = () => {
-  scramble(originalText);
-  setTimeout(() => console.log("Submitted"), originalText.length * 50);
+  scramble(props.label);
+  setTimeout(() => console.log("Submitted"), props.label.length * 50);
 };
+
+watch(
+  () => props.label,
+  (newValue) => {
+    displayText.value = newValue;
+  }
+);
 </script>

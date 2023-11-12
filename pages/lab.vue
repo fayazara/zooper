@@ -1,7 +1,7 @@
 <template>
   <main class="min-h-screen">
     <AppHeader class="mb-12" title="Lab" :description="description" />
-    <div class="space-y-12">
+    <div class="space-y-24">
       <ContentList path="/lab" v-slot="{ list }">
         <ContentQuery
           v-for="item in list"
