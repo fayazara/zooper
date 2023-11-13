@@ -1,5 +1,6 @@
 <template>
   <span
+    ref="target"
     class="flex tabular-nums text-slate-900 dark:text-white text-5xl font-extrabold mb-2 [counter-set:_num_var(--num)] before:content-[counter(num)] animate-counter"
   >
     <span class="sr-only">{{ targetNumber }}</span
@@ -14,6 +15,9 @@
 </template>
 
 <script setup>
+const target = ref(null);
+const targetIsVisible = useElementVisibility(target);
+
 const props = defineProps({
   targetNumber: {
     type: Number,
@@ -30,6 +34,10 @@ const startCounter = () => {
     fill: "forwards",
   });
 };
+
+watchOnce(targetIsVisible, () => {
+  startCounter();
+});
 </script>
 
 <style scoped>

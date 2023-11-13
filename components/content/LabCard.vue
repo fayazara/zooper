@@ -28,6 +28,7 @@
             :class="{ 'active-tab': tab === 'code' }"
           />
           <UButton
+            v-if="showUsageTab"
             @click="tab = 'usage'"
             label="Usage"
             variant="soft"
@@ -56,6 +57,10 @@
 defineProps({
   title: String,
   description: String,
+  showUsageTab: {
+    type: Boolean,
+    default: true,
+  },
 });
 
 const tab = ref("preview");
