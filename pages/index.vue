@@ -5,6 +5,7 @@
       <HomeSocialLinks />
       <HomeFeaturedProjects />
       <HomeFeaturedArticles />
+      <HomeTestimonials/>
       <HomeNewsletter />
     </div>
   </main>
