@@ -25,30 +25,31 @@
 
 @keyframes text-slide {
   0%,
-  16% {
+  15% {
     transform: translateY(0%);
   }
 
-  20%,
-  36% {
+  17%,
+  32% {
     transform: translateY(-16.66%);
   }
 
-  40%,
-  56% {
+  34%,
+  49% {
     transform: translateY(-33.33%);
   }
 
-  60%,
-  76% {
+  51%,
+  66% {
     transform: translateY(-50%);
   }
 
-  80%,
-  96% {
+  68%,
+  83% {
     transform: translateY(-66.66%);
   }
 
+  85%,
   100% {
     transform: translateY(-83.33%);
   }

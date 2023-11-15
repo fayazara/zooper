@@ -1,13 +1,12 @@
 <template>
   <div
-    class="py-12 relative overflow-hidden flex items-center justify-center w-full bg-gray-100"
+    class="py-12 relative overflow-hidden flex items-center justify-center w-full bg-gray-100 dark:bg-gray-900 dark:text-white"
     @mouseover="fast = true"
     @mouseleave="fast = false"
     :style="{ '--streak-speed': streakSpeed }"
   >
     <span class="rocket" :class="{ shake: fast, move: !fast }">
       <Icon name="ph:rocket-duotone" class="h-12 w-12 -rotate-90" />
-      <!-- <span>One day delivery</span> -->
     </span>
     <span
       v-for="n in 5"
@@ -17,7 +16,7 @@
         animationDelay: Math.random() * 1 + 's',
         animationDuration: streakSpeed,
       }"
-      class="streak absolute left-0 w-1/5 h-0.5 bg-gradient-to-r from-transparent to-black/60"
+      class="streak absolute left-0 w-1/5 h-0.5 bg-gradient-to-r from-transparent to-black/60 dark:to-white/40"
     ></span>
   </div>
 </template>
