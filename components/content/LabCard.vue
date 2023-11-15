@@ -52,7 +52,7 @@
       <div>
         <div
           v-if="tab === 'preview'"
-          class="px-4 py-8 bg-gray-100 dark:bg-gray-900 flex flex-col justify-center items-center overflow-hidden"
+          class="bg-gray-100 dark:bg-gray-900 overflow-hidden"
         >
           <slot name="preview" />
         </div>

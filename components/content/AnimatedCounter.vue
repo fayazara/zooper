@@ -1,17 +1,19 @@
 <template>
-  <span
-    ref="target"
-    class="flex tabular-nums text-slate-900 dark:text-white text-5xl font-extrabold mb-2 [counter-set:_num_var(--num)] before:content-[counter(num)] animate-counter"
-  >
-    <span class="sr-only">{{ targetNumber }}</span
-    >+
-  </span>
-  <UButton color="white" @click="startCounter" class="mt-4" size="xs">
-    Start Counter
-  </UButton>
-  <p class="text-xs mt-2 text-gray-500">
-    or start the counter when this component is in the viewport
-  </p>
+  <div class="px-4 py-8 flex items-center justify-center flex-col">
+    <span
+      ref="target"
+      class="flex tabular-nums text-slate-900 dark:text-white text-5xl font-extrabold mb-2 [counter-set:_num_var(--num)] before:content-[counter(num)] animate-counter"
+    >
+      <span class="sr-only">{{ targetNumber }}</span
+      >+
+    </span>
+    <UButton color="white" @click="startCounter" class="mt-4" size="xs">
+      Start Counter
+    </UButton>
+    <p class="text-xs mt-2 text-gray-500">
+      or start the counter when this component is in the viewport
+    </p>
+  </div>
 </template>
 
 <script setup>
