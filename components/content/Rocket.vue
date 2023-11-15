@@ -1,12 +1,13 @@
 <template>
   <div
-    class="py-12 relative overflow-hidden flex items-center justify-center w-full"
+    class="py-12 relative overflow-hidden flex items-center justify-center w-full bg-gray-100"
     @mouseover="fast = true"
     @mouseleave="fast = false"
     :style="{ '--streak-speed': streakSpeed }"
   >
     <span class="rocket" :class="{ shake: fast, move: !fast }">
       <Icon name="ph:rocket-duotone" class="h-12 w-12 -rotate-90" />
+      <!-- <span>One day delivery</span> -->
     </span>
     <span
       v-for="n in 5"
