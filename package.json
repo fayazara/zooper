@@ -23,6 +23,7 @@
   "dependencies": {
     "@iconify-json/lucide": "^1.1.139",
     "@nuxt/image": "^1.0.0",
-    "@nuxt/ui": "^2.10.0"
+    "@nuxt/ui": "^2.10.0",
+    "vue-use-fixed-header": "^2.0.0"
   }
 }

@@ -8548,6 +8548,11 @@ vue-template-compiler@^2.7.14:
     de-indent "^1.0.2"
     he "^1.2.0"
 
+vue-use-fixed-header@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vue-use-fixed-header/-/vue-use-fixed-header-2.0.0.tgz#f663dac8d6051a773299abe60253c9dd7858cad2"
+  integrity sha512-N4vWhTZpTaY5uWXIoUAXrmMR2tBQuIPf+mT+jx/ayk2eSZNCcNy0J52uJ7Dvf8St1vSmkdYdH3K/WwuV+dTQDA==
+
 vue@^3.3.4:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.3.7.tgz#972a218682443a3819d121261b2bff914417f4f0"
