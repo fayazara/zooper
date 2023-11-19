@@ -28,9 +28,9 @@
 
 <script setup>
 const description =
-  "Awesome things I've found on the internet. One neat thing about this page is, I just need to send a telegram message to a bot and it adds it here in the list.";
+  "Awesome things I've found on the internet. This page is still WIP, I want to add search like bmrks.com";
 useSeoMeta({
-  title: "Lab | Fayaz Ahmed",
+  title: "Bookmarks | Fayaz Ahmed",
   description,
 });
 
