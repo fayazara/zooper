@@ -1,0 +1,8 @@
+{
+  "name": "Hawa",
+  "url": "https://github.com/fayazara/hawa",
+  "description": "A simple white noise app which sits in the menubar",
+  "thumbnail": "/projects/hawa.png",
+  "status": "Active",
+  "opensource": true
+}
