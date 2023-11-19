@@ -10,18 +10,18 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.9.0",
-    "@nuxt/devtools": "^1.0.0",
-    "@nuxthq/studio": "^1.0.3",
+    "@nuxt/devtools": "1.0.2",
+    "@nuxthq/studio": "1.0.4",
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "nuxt": "^3.8.0",
-    "nuxt-icon": "^0.6.1",
-    "prettier": "^3.0.3",
+    "nuxt": "3.8.1",
+    "nuxt-icon": "0.6.6",
+    "prettier": "3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
     "yarn-upgrade-all": "^0.7.2"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.1.139",
+    "@iconify-json/lucide": "1.1.141",
     "@nuxt/image": "^1.0.0",
     "@nuxt/ui": "^2.10.0",
     "vue-use-fixed-header": "^2.0.0"
