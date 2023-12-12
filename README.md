@@ -1,6 +1,8 @@
 # Zooper
 
-Zooper is a beautifule personal portfolio template for developers, programmers, freelancers and designers.
+Zooper is a beautiful personal portfolio template for developers, programmers, freelancers and designers.
+
+[!preview](https://zooper.pages.dev/preview.jpg)
 
 ## Features
 
@@ -27,8 +29,8 @@ RSS feeds
 Search
 Likes
 
-
 ## Tech Stack
+
 1. Nuxt JS
 2. Tailwind CSS
 3. Vue
@@ -43,4 +45,5 @@ Likes
 4. Run `yarn dev` to start the development server.
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
