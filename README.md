@@ -1,11 +1,4 @@
-
----
-### Want to build & ship full stack apps with Nuxt 3? Try [Supersaas](https://supersaas.dev?ref=github)
-
-
-#### The saas starter kit with Auth, Billing, Database, Storage, KV and lot's of other saas recipes.
----
-
+[<img src="https://github.com/user-attachments/assets/60e89805-26fd-4074-8ced-447fb148c7e6">](http://supersaas.dev?ref=github)
 
 
 # Zooper
